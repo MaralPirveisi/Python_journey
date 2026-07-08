@@ -1,0 +1,20 @@
+score = 0
+questions = [
+    "What is 2 + 2?",
+    "What is the capital of Iran?",
+    "Python is a programming language? "
+]
+answers = [
+    "4",
+    "Tehran",
+    "yes"
+]
+for i in range(3):
+    print(questions[i])
+    user_answer = input("Your answer: ")
+    if user_answer.lower() == answers[i]:
+        print("Correct!")
+        score += 1
+    else:
+        print("Wrong!")
+print(f"Your score is {score}/3")
