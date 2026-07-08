@@ -1,0 +1,35 @@
+numbers = []
+for i in range(5):
+    number = int(input("Please enter your number: "))
+    numbers.append(number)
+summation = 0
+for number in numbers:
+    summation += number
+average = summation / 5
+even_numbers = []
+for number in numbers:
+    if number % 2 == 0:
+        even_numbers.append(number)
+biggest = numbers[0]
+for number in numbers:
+    if number > biggest:
+        biggest = number
+smallest = numbers[0]
+for number in numbers:
+    if number < smallest:
+        smallest = number
+positive_numbers = []
+negative_numbers = []
+for number in numbers:
+    if number >= 0:
+        positive_numbers.append(number)
+    else:
+        negative_numbers.append(number)
+print(f"Numbers: {numbers}")
+print(f"Summation is: {summation}")
+print(f"Average is: {average}")
+print(f"Even numbers: {even_numbers}")
+print(f"Biggest number is: {biggest}")
+print(f"Smallest number is: {smallest}")
+print(f"Positive numbers: {positive_numbers}")
+print(f"Negative numbers: {negative_numbers}")
